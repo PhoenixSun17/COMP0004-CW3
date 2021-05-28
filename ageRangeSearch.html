@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Age Range Based Search</title>
+</head>
+<body>
+<h1>Age Range Search</h1>
+
+<form action="/runAgeRangeSearch.html">
+
+  <div class="form-group col-md-4">
+    <form method="POST" action="/runMultipleSearch.html">
+
+      <div>
+        <label for="min">Minimum age boundary:</label>
+        <input type="text" name ="searchMin" id = "min" placeholder="Enter minimum age"/>
+      </div>
+
+      <div>
+        <label for="max">Maximum age boundary:</label>
+        <input type="text" name ="searchMax" id ="max" placeholder="Enter maximum age"/>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+  </div>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rename Patient List Page</title>
+</head>
+<body>
+<h1>Renaming Patient List</h1>
+
+<form action="/runRenamePatientList.html">
+
+    <div class="form-group col-md-4">
+        <form method="POST" action="/runRenamePatientList.html">
+
+            <div>
+                <label for="path">Patient list to be rename:</label>
+                <input type="text" name ="Name" id = "path" placeholder="Enter the name of patient list"/>
+            </div>
+            <div>
+                <label for="paths">New name for the list:</label>
+                <input type="text" name ="newName" id = "paths" placeholder="Enter the new name of patient list"/>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Remove Patient List Objects</title>
+</head>
+<body class="m-3">
+<h1>Remove item in list with certain feature in fields</h1>
+
+<form action="/runRemovePatientListObj.html">
+
+    <div>
+        <label for="min">List to add item:</label>
+        <input type="text" name ="removeName" id = "min" placeholder="Enter name of the List"/>
+    </div>
+
+    <div>
+        <label>----------------------------------------------------------------------------</label>
+    </div>
+
+    <div class="form-group col-md-4">
+        <label for="records">Select field of keyword:</label>
+
+        <form method="POST" action="/runRemovePatientListObj.html">
+
+
+
+            <select class="form-control" id="records" name="field">
+                <option value="id">id</option>
+                <option value="birthdate">birth date</option>
+                <option value="deathdate">death date</option>
+                <option value="ssn">ssn</option>
+                <option value="driver">driving licence</option>
+                <option value="passport">passport</option>
+                <option value="prefix">prefix</option>
+                <option value="first">first name</option>
+                <option value="last" selected>last name</option>
+                <option value="suffix">suffix</option>
+                <option value="maiden">maiden</option>
+                <option value="marital">marital</option>
+                <option value="race">race</option>
+                <option value="ethnicity">ethnicity</option>
+                <option value="gender">gender</option>
+                <option value="birthplace">birthplace</option>
+                <option value="address">address</option>
+                <option value="city">city</option>
+                <option value="state">state</option>
+                <option value="zip">zip</option>
+
+            </select>
+
+            <input type="text" name ="searchStr" placeholder="Enter remove keyword"/>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
+</form>
+
+</body>
+</html>
